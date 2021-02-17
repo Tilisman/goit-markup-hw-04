@@ -3,6 +3,7 @@
     --color-lightgrey: rgba(255, 255, 255, 0.6);
     --title-text-color: #212121;
     --accent-color: #2196f3;
+    --primary-black: #212121;
     --primary-white: #ffffff;
     --primary-background: #2f303a;
     --primary-background-opacity40: rgba(47, 48, 58, 0.4);
@@ -13,7 +14,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f5f7fa;
+    background: var(--primary-white);
     margin: 0;
     padding: 0;
 }
@@ -151,7 +152,9 @@ address {
 }
 
 .contacts-list .link {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -168,6 +171,14 @@ address {
 .contacts-list .link:hover,
 .contacts-list .link:focus {
     color: var(--accent-color);
+}
+
+.contact-link-icon {
+    display: inline-flex;
+    height: 16px;
+    width: 16px;
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .section {
