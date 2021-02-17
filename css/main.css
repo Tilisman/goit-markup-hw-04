@@ -1,14 +1,24 @@
 /* === HERO === */
 
 .hero-container {
-    width: var(--cont-width);
+    max-width: var(--cont-width);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 0 15px;
+}
+
+.overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hero {
@@ -17,8 +27,7 @@
     align-items: center;
     justify-content: center;
     min-height: 600px;
-    background-image: url(../img/hero.jpg);
-    background-color: var(--primary-background-opacity40);
+    /* background-color: var(--primary-background-opacity40); */
 }
 
 .hero-title {
@@ -71,12 +80,12 @@
 /* Features Section */
 
 .features-container {
-    width: var(--cont-width);
+    max-width: var(--cont-width);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
-    padding: 94px 15px;
+    padding: 0 15px;
 }
 
 .section.features {
@@ -84,6 +93,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 94px 0;
 }
 
 .section-title.hidden-title {
@@ -131,13 +141,16 @@
 /* About Section */
 
 .about-container {
-    width: var(--cont-width);
+    max-width: var(--cont-width);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 0 15px;
+}
+
+.about.section {
     padding-bottom: 94px;
 }
 
@@ -160,12 +173,12 @@
     align-items: center;
     flex-direction: column;
     padding: 0 15px;
-    padding-bottom: 94px;
-    padding-top: 94px;
 }
 
 .section.team {
     background-color: var(--secondary-background);
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .team-list {
