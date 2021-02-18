@@ -236,6 +236,10 @@ address {
     margin-bottom: 20px;
 }
 
+.footer .logo {
+    width: fit-content;
+}
+
 .adress a {
     color: var(--color-lightgrey);
     font-style: normal;
