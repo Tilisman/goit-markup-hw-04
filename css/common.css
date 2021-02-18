@@ -202,8 +202,13 @@ address {
 /* Footer */
 
 .footer {
+    align-items: left;
     padding: 60px 0;
     background-color: var(--primary-background);
+}
+
+.decor-container {
+    display: flex;
 }
 
 .footer-container {
@@ -249,6 +254,13 @@ address {
     letter-spacing: 0.03em;
 }
 
+.footer-adress-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 230px;
+}
+
 .adress a:hover {
     color: var(--primary-white);
 }
@@ -264,9 +276,9 @@ address {
 .social-footer {
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    text-align: left;
+    align-items: left;
+    justify-content: center;
+    margin-left: 70px;
 }
 
 .social-footer-title {
@@ -276,11 +288,12 @@ address {
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .footer-social-list {
     display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
