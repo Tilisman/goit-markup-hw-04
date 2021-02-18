@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -276,7 +276,7 @@
 }
 
 .social-link:hover,
-social-link:focus {
+.social-link:focus {
     color: var(--primary-white);
     background-color: var(--accent-color);
 }
@@ -343,6 +343,7 @@ social-link:focus {
 }
 
 .client-link svg {
+    display: block;
     fill: currentColor;
-    height: fit-content;
+    max-height: 90px;
 }

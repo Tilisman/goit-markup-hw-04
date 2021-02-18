@@ -257,7 +257,47 @@ address {
     margin-bottom: 0;
 }
 
-.social {
+.social-footer {
     display: flex;
     flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: left;
+}
+
+.social-footer-title {
+    color: var(--primary-white);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    justify-content: center;
+    color: var(--primary-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-social-link-icon {
+    width: 20px;
+    height: auto;
+    fill: currentColor;
 }
