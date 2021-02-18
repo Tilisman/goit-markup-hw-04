@@ -256,3 +256,8 @@ address {
 .adress p:last-child {
     margin-bottom: 0;
 }
+
+.social {
+    display: flex;
+    flex-direction: column;
+}

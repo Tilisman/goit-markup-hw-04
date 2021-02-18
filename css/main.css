@@ -226,7 +226,6 @@
 
 .team-list {
     display: flex;
-    flex-direction: row;
     margin: 0;
     margin-left: calc(-1 * var(--set-gap));
     margin-top: calc(-1 * var(--set-gap));
@@ -295,4 +294,55 @@ social-link:focus {
     width: 20px;
     height: auto;
     fill: currentColor;
+}
+
+
+/* Clients Section */
+
+.section.clients {
+    padding: 94px 0;
+}
+
+.clients-container {
+    width: var(--cont-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.clients-list {
+    display: flex;
+    margin: 0;
+    margin-left: calc(-1 * var(--set-gap));
+    margin-top: calc(-1 * var(--set-gap));
+}
+
+.clients-list>.item {
+    flex-basis: calc(100% / 6);
+    margin-left: var(--set-gap);
+    margin-top: var(--set-gap);
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    color: var(--primary-icon-color);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-color);
+}
+
+.client-link svg {
+    fill: currentColor;
+    height: fit-content;
 }
