@@ -259,7 +259,8 @@
     margin-bottom: 16px;
 }
 
-.social-link-list {
+
+/* .social-link-list {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -294,7 +295,7 @@
     width: 20px;
     height: auto;
     fill: currentColor;
-}
+} */
 
 
 /* Clients Section */
